@@ -26,5 +26,5 @@ newmtl Firetruck_Wheels
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka ../../../suv/4/materials/textures/wheels_01.png
-	map_Kd ../../../suv/4/materials/textures/wheels_01.png
+	map_Ka ../../suv/materials/textures/wheels_01.png
+	map_Kd ../../suv/materials/textures/wheels_01.png

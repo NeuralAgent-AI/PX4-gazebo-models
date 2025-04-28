@@ -19,8 +19,8 @@
                 </geometry>
                 <material>
                     <script>
-                        <uri>file:///models/asphalt plane/files/materials/scripts</uri>
-                        <uri>file:///models/asphalt plane/files/materials/textures</uri>
+                        <uri>file:///models/asphalt plane/materials/scripts</uri>
+                        <uri>file:///models/asphalt plane/materials/textures</uri>
                         <name>vrc/asphalt</name>
                     </script>
                 </material>

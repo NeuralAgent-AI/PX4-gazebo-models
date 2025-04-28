@@ -6,15 +6,15 @@
       <visual name="forest_001">
         <geometry>
           <mesh>
-            <uri>file:///models/forests/4/meshes/Forest-001.obj</uri>
+            <uri>file:///../models/forests/meshes/Forest-001.obj</uri>
           </mesh>
         </geometry>
 		<material>
 			<diffuse>1.0 1.0 1.0</diffuse>
 			<specular>1.0 1.0 1.0</specular>
 			<script>
-				<uri>file:///models/forests/4/materials/scripts/</uri>
-				<uri>file:///models/forests/4/materials/textures/</uri>
+				<uri>file:///../models/forests/materials/scripts</uri>
+				<uri>file:///../models/forests/materials/textures</uri>
 				<name>Forest/Tree</name>
 			</script>
 			<pbr>
@@ -28,15 +28,15 @@
       <visual name="forest_002">
         <geometry>
           <mesh>
-            <uri>file:///models/forests/4/meshes/Forest-002.obj</uri>
+            <uri>file:///../models/forests/meshes/Forest-002.obj</uri>
           </mesh>
         </geometry>
 		<material>
 			<diffuse>1.0 1.0 1.0</diffuse>
 			<specular>1.0 1.0 1.0</specular>
 			<script>
-				<uri>file:///models/forests/4/materials/scripts/</uri>
-				<uri>file:///models/forests/4/materials/textures/</uri>
+				<uri>file:///../models/forests/materials/scripts</uri>
+				<uri>file:///../models/forests/materials/textures</uri>
 				<name>Forest/Tree</name>
 			</script>
 			<pbr>
@@ -50,15 +50,15 @@
       <visual name="forest_003">
         <geometry>
           <mesh>
-            <uri>file:///models/forests/4/meshes/Forest-003.obj</uri>
+            <uri>file:///../models/forests/meshes/Forest-003.obj</uri>
           </mesh>
         </geometry>
 		<material>
 			<diffuse>1.0 1.0 1.0</diffuse>
 			<specular>1.0 1.0 1.0</specular>
 			<script>
-				<uri>file:///models/forests/4/materials/scripts/</uri>
-				<uri>file:///models/forests/4/materials/textures/</uri>
+				<uri>file:///../models/forests/materials/scripts</uri>
+				<uri>file:///../models/forests/materials/textures</uri>
 				<name>Forest/Tree</name>
 			</script>
 			<pbr>

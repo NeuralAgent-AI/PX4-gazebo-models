@@ -11,21 +11,10 @@
                     </box>
                 </geometry>
             </collision>
-            <!--
-      <collision name="collision">
-        <pose>0 0 0 0 0 0</pose>
-        <geometry>
-          <mesh>
-            <uri>meshes/droneplatformx1.dae</uri>
-            <scale>1.0 1.0 1.4</scale>
-          </mesh>
-        </geometry>
-      </collision>
--->
             <visual name="DronePlatformX1_visual">
                 <geometry>
                     <mesh>
-                        <uri>meshes/droneplatformx1.dae</uri>
+                        <uri>file:///../models/droneplatformx1/meshes/droneplatformx1.dae</uri>
                         <submesh>
                             <name>DronePlatformX1</name>
                             <center>false</center>
@@ -44,10 +33,9 @@
                             <roughness_map>materials/textures/DronePlatformX1_Roughness.jpg</roughness_map>
                         </metal>
                     </pbr>
-                    <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>materials/scripts/</uri>
-                        <uri>materials/textures/</uri>
+                        <uri>file:///../models/droneplatformx1/materials/scripts</uri>
+                        <uri>file:///../models/droneplatformx1/materials/textures</uri>
                         <name>UrbanTile/DronPlatformX1_Diffuse</name>
                     </script>
                 </material>

@@ -1,0 +1,412 @@
+<sdf version='1.10'>
+  <world name='neural-island'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>5.5645e-06 2.28758e-05 -4.23884e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+	  <ambient>0.3 0.2 0.2 1</ambient> <!-- warmer ambient tone -->
+	  <background>0.8 0.5 0.4 1</background> <!-- soft orange-ish sunset sky -->
+	  <shadows>true</shadows>
+	  <sky>
+		<time>18.0</time> <!-- 6 PM -->
+		<sunrise>6.0</sunrise>
+		<sunset>18.0</sunset>
+		<clouds>
+		  <speed>0.5</speed>
+		  <direction>0.2</direction>
+		  <mean_size>0.4</mean_size>
+		  <humidity>0.9</humidity>
+		  <ambient_color>0.9 0.4 0.2 1</ambient_color> 
+		</clouds>
+	  </sky>
+	</scene>
+    <include>
+      <uri>file:///../models/terrain_basic</uri>
+      <name>terrain_basic</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/terrain_objects</uri>
+      <name>terrain_objects</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/forests</uri>
+      <name>forest</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/coast_water</uri>
+      <name>coast_waves</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/lake_house</uri>
+      <name>main_house</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <model name='fire_0001'>
+      <static>true</static>
+      <pose>420 -11 70 0 -0.5 0</pose>
+      <link name='fire_0001_link'>
+        <particle_emitter name='fire_001_emitter' type='box'>
+          <emitting>true</emitting>
+          <size>40 2 40</size>
+          <particle_size>1 1 1</particle_size>
+          <lifetime>40</lifetime>
+          <min_velocity>0.1</min_velocity>
+          <max_velocity>0.5</max_velocity>
+          <scale_rate>0.5</scale_rate>
+          <rate>5</rate>
+          <material>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>1 1 1 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>../materials/textures/fire.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </particle_emitter>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='fire_0002'>
+      <static>true</static>
+      <pose>474 -9 92 0.14 0 0</pose>
+      <link name='fire_0002_link'>
+        <particle_emitter name='fire_002_emitter' type='box'>
+          <emitting>true</emitting>
+          <size>60 1 60</size>
+          <particle_size>1 1 1</particle_size>
+          <lifetime>20</lifetime>
+          <min_velocity>0.1</min_velocity>
+          <max_velocity>0.5</max_velocity>
+          <scale_rate>0.5</scale_rate>
+          <rate>10</rate>
+          <material>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>1 1 1 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>../materials/textures/fire.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </particle_emitter>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='fire_0003'>
+      <static>true</static>
+      <pose>-420 -400 126 0.6 0 0</pose>
+      <link name='fire_0003_link'>
+        <particle_emitter name='fire_003_emitter' type='box'>
+          <emitting>true</emitting>
+          <size>100 2 100</size>
+          <particle_size>1 1 1</particle_size>
+          <lifetime>30</lifetime>
+          <min_velocity>0.1</min_velocity>
+          <max_velocity>0.5</max_velocity>
+          <scale_rate>0.5</scale_rate>
+          <rate>20</rate>
+          <material>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>1 1 1 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>../materials/textures/fire.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </particle_emitter>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <include>
+      <uri>file:///../models/fire truck</uri>
+      <name>fire_truck_001</name>
+      <pose>-120.19 -96.64 10.58 0.1 0 -2.18</pose>
+    </include>
+    <include>
+      <uri>file:///../models/fire truck</uri>
+      <name>fire_truck_002</name>
+      <pose>-121.98 -101.97 10.58 0.1 0 -2.18</pose>
+    </include>
+    <include>
+      <uri>file:///../models/apartment</uri>
+      <name>apartment_001</name>
+      <pose>201.67100524902344 8.3763704299926758 6.0832743644714355 0 0 1.4669799539096002</pose>
+    </include>
+    <include>
+      <uri>file:///../models/apartment</uri>
+      <name>apartment_002</name>
+      <pose>257.12337999350967 -1.6857143690589709 6.0832700729370117 0 0 1.4669799539096002</pose>
+    </include>
+    <include>
+      <uri>file:///../models/x500</uri>
+      <name>x500</name>
+      <pose>-88.604530334472656 -86.033897399902344 14.138099670410156 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/table marble</uri>
+      <name>table_marble_001</name>
+      <pose>-86.987472534179688 -82.452774047851562 13.605400085449219 0 0 -0.38586799106343878</pose>
+    </include>
+    <include>
+      <uri>file:///../models/table marble</uri>
+      <name>table_marble_002</name>
+      <pose>-87.694298031465962 -84.167692641013261 13.605400085449219 0 0 -0.38586799106343878</pose>
+    </include>
+    <include>
+      <uri>file:///../models/table marble</uri>
+      <name>table_marble_003</name>
+      <pose>-88.38823746487347 -85.900638073131645 13.605400085449219 0 0 -0.38586799106343878</pose>
+    </include>
+    <include>
+      <uri>file:///../models/table marble</uri>
+      <name>table_marble_004</name>
+      <pose>-86.295095062155085 -80.649912153593704 13.605400085449219 0 0 -0.38586799106343878</pose>
+    </include>
+    <include>
+      <uri>file:///../models/fire station</uri>
+      <name>fire_station_001</name>
+      <pose>-113.36 -77.34 9.5 0.01 -0.01 3.14</pose>
+    </include>
+    <include>
+      <uri>file:///../models/fire station</uri>
+      <name>fire_station_002</name>
+      <pose>-157.15 -88.95 8 0 0.07 3.14</pose>
+    </include>
+    <include>
+      <uri>file:///../models/walking person</uri>
+      <name>person_walking_001</name>
+      <pose>254.57699584960938 19.449499130249034 0.19577513635158539 0 0 1.7866700286038053</pose>
+    </include>
+    <include>
+      <uri>file:///../models/walking person</uri>
+      <name>person_walking_002</name>
+      <pose>-105.78 -100.52 12.3 0 0 1.6</pose>
+    </include>
+    <include>
+      <uri>file:///../models/walking person</uri>
+      <name>person_walking_003</name>
+      <pose>-101.3 -89.21 11.58 0 0 1.6</pose>
+    </include>
+    <include>
+      <uri>file:///../models/walking person</uri>
+      <name>person_walking_004</name>
+      <pose>-114.76 -95.21 11.1 0 0 1.6</pose>
+    </include>
+    <include>
+      <uri>file:///../models/police station</uri>
+      <name>police_station</name>
+      <pose>301.0360107421875 43.348701477050781 3.6636340618133545 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/radio tower</uri>
+      <name>radio_tower_001</name>
+      <pose>478.80801391601562 -8.2449302673339844 91.426399230957031 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/radio tower</uri>
+      <name>radio_tower_002</name>
+      <pose>-234.97833878813117 -59.732511128888035 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/radio tower</uri>
+      <name>radio_tower_003</name>
+      <pose>186.843994140625 -39.706401824951172 7.7298398017883301 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/office building</uri>
+      <name>office_building</name>
+      <pose>292.66500854492188 13.527299880981445 4.8020000457763672 0 -0.068478591035016426 -0.57333799892659731</pose>
+    </include>
+    <include>
+      <uri>file:///../models/tent</uri>
+      <name>tent_001</name>
+      <pose>213.59347100303006 28.775672549496846 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/tent</uri>
+      <name>tent_002</name>
+      <pose>220.4936018989853 27.120998721416154 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/tent</uri>
+      <name>tent_003</name>
+      <pose>226.63350739542045 23.755146459241288 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/tent</uri>
+      <name>tent_004</name>
+      <pose>233.98053916672987 22.45065352530337 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/tent</uri>
+      <name>tent_005</name>
+      <pose>240.49884528890161 21.58404598767175 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/tent</uri>
+      <name>tent_006</name>
+      <pose>288.46099853515625 27.261600494384766 0.90309751033782959 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/international space station</uri>
+      <name>iss_001</name>
+      <pose>185.04299926757812 33.707515716552734 6.8526067733764648 3.14 0 3.14</pose>
+    </include>
+    <include>
+      <uri>file:///../models/international space station</uri>
+      <name>iss_002</name>
+      <pose>223.87619132143192 19.07336269354515 6.8526101112365723 3.14 0 3.14</pose>
+    </include>
+    <include>
+      <uri>file:///../models/international space station</uri>
+      <name>iss_003</name>
+      <pose>251.99699401855469 -31.628589630126953 22.751071929931641 3.14 0 3.14</pose>
+    </include>
+    <include>
+      <uri>file:///../models/international space station</uri>
+      <name>iss_004</name>
+      <pose>292.99876242924137 -38.459399238904069 22.751100540161133 3.14 0 3.14</pose>
+    </include>
+    <include>
+      <uri>file:///../models/international space station</uri>
+      <name>iss_005</name>
+      <pose>314.73090597231396 13.88789105013096 22.751100540161133 3.14 0 3.14</pose>
+    </include>
+    <include>
+      <uri>file:///../models/standing person</uri>
+      <name>person_standing_001</name>
+      <pose>208.40800476074219 30.981700897216797 0.80513226985931396 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/standing person</uri>
+      <name>person_standing_002</name>
+      <pose>216.81005814358915 27.771054204828857 0.80513197183609009 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/standing person</uri>
+      <name>person_standing_003</name>
+      <pose>223.87423335951914 25.437885093522702 0.80513197183609009 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/standing person</uri>
+      <name>person_standing_004</name>
+      <pose>247.60400390625 19.202800750732404 1.0105047225952148 0 0 1.2495500575461571</pose>
+    </include>
+    <include>
+      <uri>file:///../models/casual female</uri>
+      <name>casual_female_001</name>
+      <pose>254.35099792480469 19.911699295043945 0.17970900237560272 0 0 1.6387092141007045</pose>
+    </include>
+    <include>
+      <uri>file:///../models/casual female</uri>
+      <name>casual_female_002</name>
+      <pose>237.3699951171875 17.373100280761719 3.0695500373840332 0 0 1.2560088030751591</pose>
+    </include>
+    <include>
+      <uri>file:///../models/ambulance</uri>
+      <name>ambulance</name>
+      <pose>293.1669921875 32.126998901367188 2.2480700016021729 -0.33896841702399144 0.071226632399566545 0.78026100409568655</pose>
+    </include>
+    <include>
+      <uri>file:///../models/nurse</uri>
+      <name>nurse</name>
+      <pose>291.69699096679688 30.327299118041992 1.3091800212860107 0 0 -2.3179241878217436</pose>
+    </include>
+    <include>
+      <uri>file:///../models/elderladypatient</uri>
+      <name>elder_lady_patient</name>
+      <pose>290.7315673828125 29.465599060058594 1.422700047492981 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/femalevisitor</uri>
+      <name>female_visitor_001</name>
+      <pose>250.87199401855469 16.595600128173828 1.5426681041717529 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/femalevisitor</uri>
+      <name>female_visitor_002</name>
+      <pose>223.04400634765625 25.490100860595703 1.0995985269546509 0 0 0</pose>
+    </include>
+    <include>
+      <uri>file:///../models/femalevisitorsit</uri>
+      <name>female_visitor_sit_001</name>
+      <pose>289.76800537109375 23.582700729370117 2.2846000194549561 0 0 -2.6071492868806487</pose>
+    </include>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>2</intensity>
+      <direction>-0.5 0.1 -0.9</direction>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.9</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
