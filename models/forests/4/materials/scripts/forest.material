@@ -1,0 +1,16 @@
+material Forest/Tree
+{
+  technique
+  {
+    shadow_caster_material "Forest/shadow_caster_alpha"
+    pass
+    {
+      alpha_rejection greater 128
+
+      texture_unit
+      {
+        texture Tree.png
+      }
+    }
+  }
+}
