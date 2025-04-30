@@ -23,7 +23,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/NXP-HGD-CF.dae</uri>
+            <uri>meshes/NXP-HGD-CF.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -32,7 +32,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Base.dae</uri>
+            <uri>meshes/5010Base.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -41,7 +41,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Base.dae</uri>
+            <uri>meshes/5010Base.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -50,7 +50,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Base.dae</uri>
+            <uri>meshes/5010Base.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -59,7 +59,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Base.dae</uri>
+            <uri>meshes/5010Base.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -327,7 +327,7 @@
         <geometry>
           <mesh>
             <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>file:///../models/x500_base/meshes/1345_prop_ccw.stl</uri>
+            <uri>meshes/1345_prop_ccw.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -342,7 +342,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Bell.dae</uri>
+            <uri>meshes/5010Bell.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -399,7 +399,7 @@
         <geometry>
           <mesh>
             <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>file:///../models/x500_base/meshes/1345_prop_ccw.stl</uri>
+            <uri>meshes/1345_prop_ccw.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -414,7 +414,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Bell.dae</uri>
+            <uri>meshes/5010Bell.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -471,7 +471,7 @@
         <geometry>
           <mesh>
             <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>file:///../models/x500_base/meshes/1345_prop_cw.stl</uri>
+            <uri>meshes/1345_prop_cw.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -486,7 +486,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Bell.dae</uri>
+            <uri>meshes/5010Bell.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -543,7 +543,7 @@
         <geometry>
           <mesh>
             <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>file:///../models/x500_base/meshes/1345_prop_cw.stl</uri>
+            <uri>meshes/1345_prop_cw.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -558,7 +558,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///../models/x500_base/meshes/5010Bell.dae</uri>
+            <uri>meshes/5010Bell.dae</uri>
           </mesh>
         </geometry>
       </visual>

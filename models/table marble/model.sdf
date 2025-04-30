@@ -7,7 +7,7 @@
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/table marble/meshes/table_lightmap.dae</uri>
+                        <uri>meshes/table_lightmap.dae</uri>
                         <scale>0.25 0.25 0.25</scale>
                     </mesh>
                 </geometry>
@@ -15,14 +15,14 @@
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/table marble/meshes/table_lightmap.dae</uri>
+                        <uri>meshes/table_lightmap.dae</uri>
                         <scale>0.25 0.25 0.25</scale>
                     </mesh>
                 </geometry>
                 <material>
                     <script>
-                        <uri>file:///../models/table marble/materials/scripts</uri>
-                        <uri>file:///../models/table marble/materials/textures</uri>
+                        <uri>materials/scripts</uri>
+                        <uri>materials/textures</uri>
                         <name>Table/Marble_Lightmap</name>
                     </script>
                     <lighting>false</lighting>

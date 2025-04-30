@@ -14,7 +14,7 @@
             <visual name="DronePlatformX1_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/droneplatformx1/meshes/droneplatformx1.dae</uri>
+                        <uri>meshes/droneplatformx1.dae</uri>
                         <submesh>
                             <name>DronePlatformX1</name>
                             <center>false</center>
@@ -34,8 +34,8 @@
                         </metal>
                     </pbr>
                     <script>
-                        <uri>file:///../models/droneplatformx1/materials/scripts</uri>
-                        <uri>file:///../models/droneplatformx1/materials/textures</uri>
+                        <uri>materials/scripts</uri>
+                        <uri>materials/textures</uri>
                         <name>UrbanTile/DronPlatformX1_Diffuse</name>
                     </script>
                 </material>

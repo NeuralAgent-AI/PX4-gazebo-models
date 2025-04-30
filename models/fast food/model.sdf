@@ -8,7 +8,7 @@
                 <geometry>
                     <mesh>
                         <scale>3 3 2</scale>
-                        <uri>file:///../models/fast food/files/meshes/fast_food.dae</uri>
+                        <uri>files/meshes/fast_food.dae</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -16,13 +16,13 @@
                 <geometry>
                     <mesh>
                         <scale>3 3 2</scale>
-                        <uri>file:///../models/fast food/files/meshes/fast_food.dae</uri>
+                        <uri>files/meshes/fast_food.dae</uri>
                     </mesh>
                 </geometry>
                 <material>
                     <script>
-                        <uri>file:///../models/fast food/files/materials/scripts</uri>
-                        <uri>file:///../models/fast food/files/materials/textures</uri>
+                        <uri>files/materials/scripts</uri>
+                        <uri>files/materials/textures</uri>
                         <name>FastFood/Diffuse</name>
                     </script>
                 </material>

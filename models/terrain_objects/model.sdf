@@ -27,7 +27,7 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/terrain_objects/materials/textures</uri>
+                        <uri>materials/textures</uri>
                         <name>UrbanTile/RockPile_Diffuse</name>
                     </script>
                 </material>
@@ -55,7 +55,7 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/terrain_objects/materials/textures</uri>
+                        <uri>materials/textures</uri>
                         <name>UrbanTile/Bush01_Diffuse</name>
                     </script>
                 </material>
@@ -84,7 +84,7 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/terrain_objects/materials/textures</uri>
+                        <uri>materials/textures</uri>
                         <name>UrbanTile/Rock01_Diffuse</name>
                     </script>
                 </material>
@@ -113,7 +113,7 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/terrain_objects/materials/textures</uri>
+                        <uri>materials/textures</uri>
                         <name>UrbanTile/Rock02_Diffuse</name>
                     </script>
                 </material>
@@ -141,7 +141,7 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/terrain_objects/materials/textures</uri>
+                        <uri>materials/textures</uri>
                         <name>UrbanTile/TreeJeffreyPine_Diffuse</name>
                     </script>
                 </material>
@@ -171,7 +171,7 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/terrain_objects/materials/textures</uri>
+                        <uri>materials/textures</uri>
                         <name>UrbanTile/Bark_Diffuse</name>
                     </script>
                 </material>

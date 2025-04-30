@@ -6,7 +6,7 @@
             <visual name="Concrete_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Concrete</name>
                             <center>false</center>
@@ -25,8 +25,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/ConcreteTiles_Diffuse</name>
                     </script>
                 </material>
@@ -34,7 +34,7 @@
             <visual name="Siding_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Siding</name>
                             <center>false</center>
@@ -53,8 +53,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Siding_Diffuse</name>
                     </script>
                 </material>
@@ -62,7 +62,7 @@
             <visual name="WhiteWood_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>WhiteWood</name>
                             <center>false</center>
@@ -81,8 +81,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/WhiteWood_Diffuse</name>
                     </script>
                 </material>
@@ -90,7 +90,7 @@
             <visual name="Roof_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Roof</name>
                             <center>false</center>
@@ -109,8 +109,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Roof_Diffuse</name>
                     </script>
                 </material>
@@ -118,7 +118,7 @@
             <visual name="Deck_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Deck</name>
                             <center>false</center>
@@ -137,8 +137,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Deck_Diffuse</name>
                     </script>
                 </material>
@@ -146,7 +146,7 @@
             <visual name="WallBeige_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>WallBeige</name>
                             <center>false</center>
@@ -165,8 +165,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/WallBeige_Diffuse</name>
                     </script>
                 </material>
@@ -174,7 +174,7 @@
             <visual name="Brick_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Brick</name>
                             <center>false</center>
@@ -193,8 +193,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Brick_Diffuse</name>
                     </script>
                 </material>
@@ -202,7 +202,7 @@
             <visual name="Asphalt_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Asphalt</name>
                             <center>false</center>
@@ -221,8 +221,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Asphalt_Diffuse</name>
                     </script>
                 </material>
@@ -230,7 +230,7 @@
             <visual name="Baseboard_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Baseboard</name>
                             <center>false</center>
@@ -249,8 +249,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Baseboard_Diffuse</name>
                     </script>
                 </material>
@@ -258,7 +258,7 @@
             <visual name="Cobblestone_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Cobblestone</name>
                             <center>false</center>
@@ -277,8 +277,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Cobblestone_Diffuse</name>
                     </script>
                 </material>
@@ -286,7 +286,7 @@
             <visual name="Cabinets_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Cabinets</name>
                             <center>false</center>
@@ -305,8 +305,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Cabinets_Diffuse</name>
                     </script>
                 </material>
@@ -314,7 +314,7 @@
             <visual name="StainlessSteel_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>StainlessSteel</name>
                             <center>false</center>
@@ -333,8 +333,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/StainlessSteel_Diffuse</name>
                     </script>
                 </material>
@@ -342,7 +342,7 @@
             <visual name="Fireplace_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Fireplace</name>
                             <center>false</center>
@@ -361,8 +361,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Fireplace_Diffuse</name>
                     </script>
                 </material>
@@ -370,7 +370,7 @@
             <visual name="Counter_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Counter</name>
                             <center>false</center>
@@ -388,8 +388,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Counter_Diffuse</name>
                     </script>
                 </material>
@@ -397,7 +397,7 @@
             <visual name="Hedge_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Hedge</name>
                             <center>false</center>
@@ -416,8 +416,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Hedge_Diffuse</name>
                     </script>
                 </material>
@@ -425,7 +425,7 @@
             <visual name="Glass_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Glass</name>
                             <center>false</center>
@@ -442,8 +442,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Glass_Diffuse</name>
                     </script>
                 </material>
@@ -451,7 +451,7 @@
             <visual name="Floor_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Floor</name>
                             <center>false</center>
@@ -470,8 +470,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Floor_Diffuse</name>
                     </script>
                 </material>
@@ -479,7 +479,7 @@
             <visual name="WallWhite_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>WallWhite</name>
                             <center>false</center>
@@ -498,8 +498,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/WallWhite_Diffuse</name>
                     </script>
                 </material>
@@ -507,7 +507,7 @@
             <visual name="Stairs_visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/lake_house/meshes/house.dae</uri>
+                        <uri>meshes/house.dae</uri>
                         <submesh>
                             <name>Stairs</name>
                             <center>false</center>
@@ -526,8 +526,8 @@
                     </pbr>
                     <!-- fallback to script if no PBR support-->
                     <script>
-                        <uri>file:///../models/lake_house/materials/scripts/</uri>
-                        <uri>file:///../models/lake_house/materials/textures/</uri>
+                        <uri>materials/scripts/</uri>
+                        <uri>materials/textures/</uri>
                         <name>Fallback/Stairs_Diffuse</name>
                     </script>
                 </material>

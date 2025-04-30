@@ -22,7 +22,7 @@
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/police station/meshes/police_station.dae</uri>
+                        <uri>meshes/police_station.dae</uri>
                     </mesh>
                 </geometry>
             </visual>

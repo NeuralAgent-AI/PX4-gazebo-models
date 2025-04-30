@@ -6,14 +6,14 @@
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/radio tower/meshes/radio_tower.dae</uri>
+                        <uri>meshes/radio_tower.dae</uri>
                     </mesh>
                 </geometry>
             </collision>
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/radio tower/meshes/radio_tower.dae</uri>
+                        <uri>meshes/radio_tower.dae</uri>
                     </mesh>
                 </geometry>
             </visual>

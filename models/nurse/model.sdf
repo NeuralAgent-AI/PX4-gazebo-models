@@ -7,14 +7,14 @@
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/nurse/meshes/Nurse.obj</uri>
+                        <uri>meshes/Nurse.obj</uri>
                     </mesh>
                 </geometry>
             </visual>
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/nurse/meshes/Nurse_Col.obj</uri>
+                        <uri>meshes/Nurse_Col.obj</uri>
                     </mesh>
                 </geometry>
             </collision>

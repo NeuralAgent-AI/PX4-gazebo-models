@@ -6,14 +6,14 @@
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/office building/meshes/office_building.dae</uri>
+                        <uri>meshes/office_building.dae</uri>
                     </mesh>
                 </geometry>
             </collision>
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>file:///../models/office building/meshes/office_building.dae</uri>
+                        <uri>meshes/office_building.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
