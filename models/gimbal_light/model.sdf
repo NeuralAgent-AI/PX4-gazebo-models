@@ -266,8 +266,8 @@
           <image>
             <format>R8G8B8</format>
              <format>R8G8B8</format>
-            <width>640</width>
-            <height>360</height>
+            <width>540</width>
+            <height>320</height>
           </image>
           <clip>
             <near>0.05</near>
@@ -275,7 +275,7 @@
           </clip>
         </camera>
         <always_on>1</always_on>
-        <update_rate>24</update_rate>
+        <update_rate>18</update_rate>
         <visualize>true</visualize>
       </sensor>
     </link>
