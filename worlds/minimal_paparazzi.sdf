@@ -1,0 +1,32 @@
+<sdf version='1.9'>
+  <world name='minimal_paparazzi'>
+    <plugin filename="libgz-sim-sensors-system.so" name="gz::sim::systems::Sensors"/>
+    <plugin filename="libgz-sim-physics-system.so"/>
+    <plugin filename="libgz-sim-scene-broadcaster-system.so"/>
+    <gravity>0 0 -9.8</gravity>
+    <scene>
+      <ambient>0.8 0.8 0.8 1</ambient>
+      <shadows>1</shadows>
+    </scene>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </visual>
+      </link>
+    </model>
+    <include>
+      <uri>model://cameras_view</uri>
+      <name>camera_rig_instance</name>
+      <pose>0 0 10 0 0 0</pose>
+    </include>
+  </world>
+</sdf>
