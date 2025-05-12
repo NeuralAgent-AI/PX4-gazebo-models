@@ -3,11 +3,10 @@
 import argparse
 import subprocess
 import os
-import shutil
 
-
-def run(cmd):
-    process_handle = subprocess.Popen(['bash', '-c', cmd], cwd='.')
+def run(cmd, env=None):
+    # Run gz sim normally, output goes to terminal
+    process_handle = subprocess.Popen(['bash', '-c', cmd], cwd='.', env=env)
     return process_handle
 
 def main():
@@ -15,49 +14,75 @@ def main():
 
     parser.add_argument('--world', help='World to run in Gazebo', required=False, default="default")
     parser.add_argument('--gz_partition', help='Gazebo partition to run in', required=False)
-    parser.add_argument('--gz_ip', help='Outgoing network interface to use for traffic',required=False)
+    parser.add_argument('--gz_ip', help='Outgoing network interface to use for traffic', required=False)
     parser.add_argument('--model_store', help='Path to model storage directory', required=False, default="~/.simulation-gazebo")
     parser.add_argument('--dryrun', help='Test in dryrun. Do not launch gazebo', required=False, default=False, action='store_true')
     parser.add_argument('--headless', help='Run Gazebo without GUI', required=False, default=False, action='store_true')
     parser.add_argument('--render-engine', help='Rendering engine (ogre or ogre2)', required=False, choices=['ogre', 'ogre2'], default='ogre2')
+    parser.add_argument('--logfile', help='Path to debug log file', required=False, default="gazebo_launcher_debug.log")
     args = parser.parse_args()
 
-    # Set up environment variables to look for models for simulation
     args.model_store = os.path.expanduser(args.model_store)
+    args.logfile = os.path.expanduser(args.logfile)
 
-    # Check whether the model storage directory exists.
-    if not os.path.exists(args.model_store):
-        print("Making model storage directory")
-        os.makedirs(args.model_store)
+    # Write debug info to logfile
+    with open(args.logfile, "w") as logf:
+        if not os.path.exists(args.model_store):
+            logf.write("Making model storage directory\n")
+            os.makedirs(args.model_store)
 
+        model_count = int(subprocess.check_output(f'find {args.model_store} -type f | wc -l', shell=True, text=True))
+        logf.write(f"Found: {model_count} files in {args.model_store}\n")
 
-    model_count = int(subprocess.check_output(f'find {args.model_store} -type f | wc -l', shell=True, text=True))
-    models_exist = True if model_count > 0 else False
-    print(f"Found: {model_count} files in {args.model_store}")
+        logf.write(f"World file path: {args.model_store}/worlds/{args.world}.sdf\n")
+        logf.write(f"Model store path: {args.model_store}/models\n")
 
-    # Launch gazebo simulation
-    print('> Launching gazebo simulation...')
-    if not args.dryrun:
-        cmd = f'GZ_SIM_RESOURCE_PATH={args.model_store}/models '
-        # cmd += f'GZ_SIM_SYSTEM_PLUGIN_PATH={args.model_store}/plugins '
-        cmd += f'GZ_SIM_SERVER_CONFIG_PATH={args.model_store}/server.config '
-        cmd += f'gz sim -v 4 -r --render-engine {args.render_engine} {args.model_store}/worlds/{args.world}.sdf'
+        try:
+            with open(f"{args.model_store}/worlds/{args.world}.sdf") as f:
+                logf.write("\n--- First 20 lines of world SDF ---\n")
+                for i, line in enumerate(f):
+                    logf.write(line)
+                    if i >= 19:
+                        break
+                logf.write("\n--- End of snippet ---\n\n")
+        except Exception as e:
+            logf.write(f"Error reading world SDF file: {e}\n")
+
+        # Prepare environment variables for subprocess
+        env = os.environ.copy()
+        env['GZ_SIM_RESOURCE_PATH'] = f"{args.model_store}/models"
+
+        # Add plugin path for sensors plugin
+        plugin_path = "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins"
+        env['LD_LIBRARY_PATH'] = plugin_path + ":" + env.get('LD_LIBRARY_PATH', '')
+        env['GZ_SIM_SYSTEM_PLUGIN_PATH'] = plugin_path
+
+        logf.write("Environment variables used for launch:\n")
+        for k in ['GZ_SIM_RESOURCE_PATH', 'LD_LIBRARY_PATH', 'GZ_SIM_SYSTEM_PLUGIN_PATH']:
+            if k in env:
+                logf.write(f"{k}={env[k]}\n")
+
+        # Construct the gazebo command
+        cmd = f'gz sim -v 4 -r --render-engine {args.render_engine} {args.model_store}/worlds/{args.world}.sdf'
 
         if args.headless:
-            cmd = f'{cmd} -s'
+            cmd += ' -s'
 
         if args.gz_partition:
             cmd = f'GZ_PARTITION={args.gz_partition} {cmd}'
+
         if args.gz_ip:
             cmd = f'GZ_IP={args.gz_ip} {cmd}'
 
-        try:
-            process_handle = run(cmd)
+        logf.write(f"Launching command: {cmd}\n")
 
+    if not args.dryrun:
+        try:
+            process_handle = run(cmd, env=env)
             while process_handle.poll() is None:
                 process_handle.wait()
-
         except KeyboardInterrupt:
+            print("\nSimulation interrupted by user.")
             exit(0)
 
 if __name__ == "__main__":

@@ -1333,6 +1333,126 @@
                     </mesh>
                 </geometry>
             </collision>
+            <collision name="RockPile_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>RockPile</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="Bush_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>Bush</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="Rock01_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>Rock01</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="Rock02_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>Rock02</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="JeffreyTreeLeaves_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>JeffreyTreeLeaves</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="JeffreyTreeBark_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>JeffreyTreeBark</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="Stump_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>Stump</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="Log_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>Log</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+            <collision name="BackgroundTrees_collision">
+            <geometry>
+                <mesh>
+                <uri>meshes/terrainobjects.dae</uri>
+                <submesh>
+                    <name>background_trees</name>
+                    <center>false</center>
+                </submesh>
+                <scale>0.01 0.01 0.01</scale>
+                </mesh>
+            </geometry>
+            </collision>
+
+
+
+
         </link>
     </model>
 </sdf>

@@ -7,9 +7,10 @@
                 <pose>0 -300 -5 0 0 0</pose>
                 <geometry>
                     <heightmap>
-                        <uri>materials/textures/Heightmap.png</uri>
+                        <uri>materials/textures/HeightmapC.png</uri>
                         <size>1200 1200 600</size>
-                    </heightmap>
+						<pos>0 -300 -5</pos>
+					</heightmap>
                 </geometry>
             </collision>
             <visual name="visual">

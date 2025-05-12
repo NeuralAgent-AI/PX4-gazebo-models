@@ -411,9 +411,9 @@
       <longitude_deg>-121.998878727967</longitude_deg>
       <elevation>38</elevation>
     </spherical_coordinates>
-<!--     <plugin filename="libgz-sim-sensors-system.so" name="gz::sim::systems::Sensors"/>
+    <plugin filename="libgz-sim-sensors-system.so" name="gz::sim::systems::Sensors"/>
     <plugin filename="libgz-sim-physics-system.so"/> 
-    <plugin filename="libgz-sim-scene-broadcaster-system.so"/> -->
+    <plugin filename="libgz-sim-scene-broadcaster-system.so"/> 
 
     <model name="ground">
       <static>true</static>
