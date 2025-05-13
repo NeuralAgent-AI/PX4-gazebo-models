@@ -8,7 +8,7 @@
                 <geometry>
                     <heightmap>
                         <uri>materials/textures/HeightmapC.png</uri>
-                        <size>1200 1200 600</size>
+                        <size>1200 1200 201.66</size>
 						<pos>0 -300 -5</pos>
 					</heightmap>
                 </geometry>
